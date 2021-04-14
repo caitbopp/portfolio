@@ -5,30 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Professional Portfolio</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <header>
-    <img id="headshot" src="assets/images/headshot.jpg">
-    <h1>Caitlin Bopp</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="#about-me">About Me</a>
-            </li>
-            <li>
-                <a href="#work">Work</a>
-            </li>
-            <li>
-                <a href="#contact-me">Contact Me</a>
-            </li>
-            <li>
-                <a href="assets/Resume_CaitlinBopp.pdf">Resume</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+        <img id="headshot" src="assets/images/headshot.jpg">
+        <a class="navbar-brand" href="#">Caitlin Bopp</a>
+        <a class="nav-item nav-link" href="#about-me">About Me</a>
+        <a class="nav-item nav-link" href="#work">Work</a>
+        <a class="nav-item nav-link" href="#contact-me">Contact Me</a>
+        <a class="nav-item nav-link" href="assets/Resume_CaitlinBopp.pdf">Resume</a>
+        </div>
+        </div>
     </nav>
 </header>
 
@@ -38,7 +30,7 @@
         <div class="flex-row heading">
             <h2>About Me</h2>
         </div>
-        <p>Hi there! My name's Caitlin and I'm an aspiring web developer. I've worked in Marketing for the last 7 years,
+        <p>Hello! My name's Caitlin and I'm an aspiring web developer. I've worked in Marketing for the last 7 years,
             and while I've learned a lot and had fun, I'm looking to change my career to developing. I'm very
             detailed-oriented, organized, and I love problem-solving! If you like any of the work you see below, please
             reach out - I'd love the opportunity to connect!</p>
@@ -49,71 +41,48 @@
             <h2>Work History</h2>
         </div>
 
-        <div class="container">
-
-            <div class="work-container">
-
-                <section class="card big">
+        <section class="row">
+            <div class="col-12">
+                <div class="card">
                     <a class="image-container" href="https://caitbopp.github.io/yoda-advice/" target="blank">
                         <img src="assets/images/project-screenshot.png"
                             alt="A screenshot of a project webpage entitled Yoda Advice."></a>
-                    <div class="overlay">
-                        <h3>Yoda Advice</h3>
-                        <p><a href="https://caitbopp.github.io/yoda-advice/">Deployed version</a></p>
-                        <p><a href="https://github.com/caitbopp/yoda-advice">GitHub repository</a></p>
+                    <div class="card-body">
+                        <h5 class="card-title">Yoda Advice</h5>
+                        <a href="https://caitbopp.github.io/yoda-advice/">Deployed version</a> |
+                        <a href="https://github.com/caitbopp/yoda-advice">GitHub repository</a>
                     </div>
-                </section>
+                </div>
+            </div>
 
-
-
-                <section class="card">
+            <div class="col-lg-6 col-sm-12 mb-3">
+                <div class="card">
                     <a class="image-container" href="https://caitbopp.github.io/work-day-scheduler/" target="blank">
                         <img src="assets/images/work-day-scheduler.png"
                             alt="A day planner with hourly blocks from 9-5."></a>
-                    <div class="flex-column">
-                        <h3>Work Day Scheduler</h3>
-                        <p><a href="https://caitbopp.github.io/work-day-scheduler/">Deployed version</a></p>
-                        <p><a href="https://github.com/caitbopp/work-day-scheduler">GitHub repository</a></p>
+                    <div class="card-body">
+                        <h5 class="card-title">Work Day Scheduler</h5>
+                        <a href="https://caitbopp.github.io/work-day-scheduler/">Deployed version</a> |
+                        <a href="https://github.com/caitbopp/work-day-scheduler">GitHub repository</a>
                     </div>
-                </section>
-
-
-
-                <section class="card">
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 mb-3">
+                <div class="card">
                     <a class="image-container" href="https://caitbopp.github.io/timed-quiz/" target="blank">
                         <img src="assets/images/code-quiz-preview.png"
                             alt="The front of a boat on a lake surrounded by mountains."></a>
-                    <div class="flex-column">
-                        <h3>Code Quiz</h3>
-                        <p><a href="https://caitbopp.github.io/timed-quiz/">Deployed version</a></p>
-                        <p><a href="https://github.com/caitbopp/timed-quiz">GitHub repository</a></p>
+                    <div class="card-body">
+                        <h5 class="card-title">Code Quiz</h5>
+                        <a href="https://caitbopp.github.io/timed-quiz/">Deployed version</a> |
+                        <a href="https://github.com/caitbopp/timed-quiz">GitHub repository</a>
                     </div>
-                </section>
-
-
-
-                <section class="card">
-                    <a class="image-container" href="#" target="blank">
-                        <img src="assets/images/food.jpg" alt="Bowtie pasta salad with pesto sauce and tomatoes."></a>
-                    <div class="flex-column">
-                        <h3>Placeholder</h3>
-                        <p>Web application coming soon!</p>
-                    </div>
-                </section>
-
-
-
-                <section class="card">
-                    <a class="image-container" href="#" target="blank">
-                        <img src="assets/images/flowers_bouqet.jpg" alt="A bouqet of pink flowers in a clear vase."></a>
-                    <div class="flex-column">
-                        <h3>Placeholder</h3>
-                        <p>Web application coming soon!</p>
-                    </div>
-                </section>
+                </div>
             </div>
-        </div>
+
+
     </div>
+
 
     <div class="flex-row container" id="contact-me">
         <div class="flex-row heading">
